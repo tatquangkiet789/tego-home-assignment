@@ -25,7 +25,7 @@ export function Reasons() {
             <div className='py-14'>
                 <h1 className='text-3xl font-bold'>Our Reputation</h1>
             </div>
-            <div className='flex flex-wrap justify-center items-center gap-4 lg:gap-x-28 lg:gap-y-14 container pb-20'>
+            <div className='flex flex-wrap justify-around items-center gap-4 container pb-20'>
                 {reputations.map(({ icon, description, title }) => (
                     <ReputationCard
                         key={title}
