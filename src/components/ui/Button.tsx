@@ -15,7 +15,7 @@ export function Button({ text, variant, size, iconLeft, iconRight, onClick }: Bu
             className={cn('flex items-center gap-3 rounded-sm justify-center duration-500', {
                 'bg-secondary text-white hover:outline hover:outline-1 hover:outline-secondary hover:bg-white hover:text-secondary':
                     variant === 'secondary',
-                'bg-primary text-white font-semibold text-base hover:outline hover:outline-1 hover:outline-primary hover:bg-white hover:text-primary':
+                'bg-primary text-white font-semibold text-base hover:outline hover:outline-1 hover:outline-primary hover:bg-transparent hover:text-primary':
                     variant === 'primary',
                 'bg-black text-white font-semibold text-base hover:gap-6': variant === 'third',
                 'bg-transparent text-white border border-white font-semibold text-base hover:text-black hover:bg-white':

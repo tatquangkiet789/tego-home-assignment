@@ -7,7 +7,7 @@ export function About() {
             <div className='container mx-auto pb-10'>
                 <div className='sm:flex sm:justify-center md:py-12 relative'>
                     <div
-                        className='hidden md:block max-w-5xl h-[640px] w-full bg-no-repeat bg-center bg-cover'
+                        className='hidden md:block max-w-4xl h-[640px] w-full bg-no-repeat bg-center bg-cover'
                         style={{ backgroundImage: `url(${about})` }}
                     ></div>
                     <div

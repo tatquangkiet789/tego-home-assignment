@@ -1,4 +1,14 @@
-import { About, Ads, Bottom, Contact, Hero, Projects, Reasons } from '~/components';
+import {
+    About,
+    Ads,
+    Bottom,
+    Contact,
+    Hero,
+    Projects,
+    Reasons,
+    Services,
+    Stats,
+} from '~/components';
 
 export function HomePage() {
     return (
@@ -6,6 +16,8 @@ export function HomePage() {
             <Hero />
             <Reasons />
             <About />
+            <Services />
+            <Stats />
             <Ads />
             <Projects />
             <Contact />

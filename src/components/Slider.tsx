@@ -31,7 +31,7 @@ export function Slider() {
                     .map((_, index) => (
                         <div
                             key={index}
-                            className={`w-3 h-3 rounded-full hover:cursor-pointer ${
+                            className={`w-3 h-3 rounded-full hover:cursor-pointer duration-500 ${
                                 activeIndex === index ? 'bg-primary' : 'bg-[#F6F8F7]'
                             }`}
                             onClick={() => setActiveIndex(index)}

@@ -1,20 +1,20 @@
+import { bestDesign, support } from '~/assets';
 import { ReputationCard } from './ui';
-import { BiSupport } from 'react-icons/bi';
 
 export function Reasons() {
     const reputations = [
         {
-            icon: <BiSupport size={40} />,
+            icon: support,
             title: 'Best Services',
             description: 'Nullam senectus porttitor in eget. Eget rutrum leo interdum.',
         },
         {
-            icon: <BiSupport size={40} />,
+            icon: support,
             title: 'Best Teams',
             description: 'Cursus semper tellus volutpat aliquet lacus.',
         },
         {
-            icon: <BiSupport size={40} />,
+            icon: bestDesign,
             title: 'Best Designs',
             description: 'Ultricies at ipsum nunc, tristique nam lectus.',
         },

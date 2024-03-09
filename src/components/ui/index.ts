@@ -5,3 +5,5 @@ export * from './Input';
 export * from './Button';
 export * from './TextArea';
 export * from './ProjectCard';
+export * from './StatCard';
+export * from './ServiceCard';

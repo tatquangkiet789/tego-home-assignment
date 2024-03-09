@@ -26,12 +26,12 @@ export function ProjectMenuItems() {
                     onClick={() => handleSetProjectMenuItemActive(name)}
                 >
                     <div
-                        className={cn('w-1 h-7 bg-transparent', {
+                        className={cn('w-1 h-7 bg-transparent duration-500', {
                             '!bg-primary': name === projectActive,
                         })}
                     ></div>
                     <h3
-                        className={cn('text-xl font-medium text-[#C2C7D6]', {
+                        className={cn('text-xl font-medium text-[#C2C7D6] duration-500', {
                             '!text-primary': name === projectActive,
                         })}
                     >
