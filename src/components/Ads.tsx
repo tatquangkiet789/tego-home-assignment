@@ -15,7 +15,12 @@ export function Ads() {
                     <p className='text-white text-xl'>Just one call away: +84 1102 2703</p>
                 </div>
                 <div className='w-56 mr-10'>
-                    <Button text='Get your consulation' variant='outline' size='lg' />
+                    <Button
+                        text='Get your consulation'
+                        variant='outline'
+                        size='lg'
+                        onClick={() => {}}
+                    />
                 </div>
             </div>
         </div>

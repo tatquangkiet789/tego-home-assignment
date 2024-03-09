@@ -25,7 +25,7 @@ export function Bottom() {
                     </p>
                     <div className='flex items-center gap-2 pb-8 pt-4'>
                         <Input placeholder='Your email here' />
-                        <Button text='Subscribe' variant='secondary' size='sm' />
+                        <Button text='Subscribe' variant='secondary' size='sm' onClick={() => {}} />
                     </div>
                     <p className='text-primary text-lg font-medium'>{`Social:`.toUpperCase()}</p>
                     <div className='flex items-center gap-4 pt-4'>

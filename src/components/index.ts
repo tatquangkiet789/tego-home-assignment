@@ -13,3 +13,5 @@ export * from './Stats';
 export * from './Services';
 export * from './Projects';
 export * from './ProjectMenuItems';
+export * from './Slider';
+export * from './AboutUs';

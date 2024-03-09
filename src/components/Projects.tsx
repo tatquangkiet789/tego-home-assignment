@@ -1,7 +1,7 @@
 import { project1, project2, project3, project4 } from '~/assets';
 import { ProjectMenuItems } from './ProjectMenuItems';
-import { Button, ProjectCard } from './ui';
-import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
+import { ProjectCard } from './ui';
+import { Slider } from './Slider';
 
 export function Projects() {
     const projects = [
@@ -38,24 +38,8 @@ export function Projects() {
                             <ProjectCard key={name} name={name} address={address} image={image} />
                         ))}
                     </div>
-                    <div className='flex items-center justify-center mt-8 gap-4 w-full md:w-[59%]'>
-                        <div className='flex-1'>
-                            <Button
-                                text='Back'
-                                variant='third'
-                                size='lg'
-                                iconLeft={<HiArrowNarrowLeft size={20} />}
-                            />
-                        </div>
-                        <p>Test</p>
-                        <div className='flex-1'>
-                            <Button
-                                text='Next'
-                                variant='third'
-                                size='lg'
-                                iconRight={<HiArrowNarrowRight size={20} />}
-                            />
-                        </div>
+                    <div className='mt-8 w-full md:w-[59%]'>
+                        <Slider />
                     </div>
                 </div>
             </div>

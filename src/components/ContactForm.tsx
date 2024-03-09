@@ -18,7 +18,7 @@ export function ContactForm() {
                 </p>
             </div>
             <div className='mx-auto w-60 bg-red-100'>
-                <Button text='Submit' variant='primary' size='lg' />
+                <Button text='Submit' variant='primary' size='lg' onClick={() => {}} />
             </div>
         </div>
     );
