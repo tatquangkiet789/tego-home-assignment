@@ -20,9 +20,12 @@ const sectionSlice = createSlice({
         setProjectMenuItemActive: (state, action) => {
             state.projectActive = action.payload;
         },
+        setActiveLink: (state, action) => {
+            state.active = action.payload;
+        },
     },
 });
 
-export const { setProjectMenuItemActive } = sectionSlice.actions;
+export const { setProjectMenuItemActive, setActiveLink } = sectionSlice.actions;
 
 export const sectionReducer = sectionSlice.reducer;

@@ -1,11 +1,23 @@
 import { award, clients, plans, projects } from '~/assets';
 import { Button, StatCard } from './ui';
+import { motion } from 'framer-motion';
 
 export function Stats() {
     const projectsCompleted = { name: 'Projects Completed', icon: projects, total: 123 };
     const happyClients = { name: 'Happy Clients', icon: clients, total: 84 };
     const awardsWin = { name: 'Awards Win', icon: award, total: 37 };
     const yearsInBusiness = { name: 'Years in Business', icon: plans, total: 30 };
+
+    const animation = {
+        initial: {
+            x: 100,
+            opacity: 0,
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+        },
+    };
 
     return (
         <div className='w-full'>
@@ -48,16 +60,37 @@ export function Stats() {
                     </div>
                 </div>
                 <div className='sm:w-full md:w-2/5 lg:w-1/3 flex flex-col gap-10'>
-                    <h1 className='font-bold text-4xl lg:text-5xl text-primary'>
+                    <motion.h1
+                        variants={animation}
+                        viewport={{ once: true }}
+                        initial='initial'
+                        whileInView='animate'
+                        transition={{ duration: 0.5, type: 'spring' }}
+                        className='font-bold text-4xl lg:text-5xl text-primary'
+                    >
                         30 Years Experience
-                    </h1>
-                    <p className='text-lg text-[#525B7A]'>
+                    </motion.h1>
+                    <motion.p
+                        variants={animation}
+                        viewport={{ once: true }}
+                        initial='initial'
+                        whileInView='animate'
+                        transition={{ duration: 0.8, type: 'spring' }}
+                        className='text-lg text-[#525B7A]'
+                    >
                         Our company has been the leading provided construction services to clients
                         throughout the USA since 1988.
-                    </p>
-                    <div className='w-44'>
+                    </motion.p>
+                    <motion.div
+                        variants={animation}
+                        viewport={{ once: true }}
+                        initial='initial'
+                        whileInView='animate'
+                        transition={{ duration: 1.1, type: 'spring' }}
+                        className='w-44'
+                    >
                         <Button text='Contact Us' onClick={() => {}} size='lg' variant='primary' />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

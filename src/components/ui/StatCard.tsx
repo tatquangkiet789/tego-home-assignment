@@ -1,4 +1,5 @@
 import { cn } from '~/lib/clsx';
+import { CounterNumber } from '../CounterNumber';
 
 type StatCardProps = {
     name: string;
@@ -20,7 +21,8 @@ export function StatCard({ name, icon, total, iconLocation }: StatCardProps) {
                 style={{ backgroundImage: `url(${icon})`, zIndex: 1 }}
             ></div>
             <div className='bg-white shadow-lg rounded-md flex flex-col p-4'>
-                <h1 className='font-semibold text-6xl'>{total}</h1>
+                {/* <h1 className='font-semibold text-6xl'>{total}</h1> */}
+                <CounterNumber to={total} />
                 <div className='flex pl-[11px] pr-10 gap-2 items-center'>
                     <div className='bg-secondary w-[6px] h-6'></div>
                     <p className='text-[#667299] text-xl'>{name}</p>

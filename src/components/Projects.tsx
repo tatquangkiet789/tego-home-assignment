@@ -24,7 +24,7 @@ export function Projects() {
     ];
 
     return (
-        <div className='w-full'>
+        <div className='w-full' id='projects'>
             <div className='container mx-auto flex justify-between py-20 gap-8'>
                 <div className='flex flex-col'>
                     <h1 className='font-bold text-3xl'>Projects</h1>

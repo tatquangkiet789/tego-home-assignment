@@ -3,7 +3,7 @@ import { AboutUs } from './AboutUs';
 
 export function About() {
     return (
-        <div className='w-full'>
+        <div className='w-full' id='about-us'>
             <div className='container mx-auto pb-10'>
                 <div className='sm:flex sm:justify-center md:py-12 relative'>
                     <div

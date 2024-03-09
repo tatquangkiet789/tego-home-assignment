@@ -1,5 +1,6 @@
 import { bestDesign, support } from '~/assets';
 import { ReputationCard } from './ui';
+import { motion } from 'framer-motion';
 
 export function Reasons() {
     const reputations = [
@@ -20,19 +21,45 @@ export function Reasons() {
         },
     ];
 
+    const animation = {
+        initial: {
+            x: 100,
+            opacity: 0,
+        },
+        animate: {
+            x: 0,
+            opacity: 1,
+        },
+    };
+
     return (
         <div className='flex flex-col justify-center items-center'>
             <div className='py-14'>
-                <h1 className='text-3xl font-bold'>Our Reputation</h1>
+                <motion.h1
+                    variants={animation}
+                    initial='initial'
+                    whileInView='animate'
+                    viewport={{ once: true }}
+                    className='text-3xl font-bold'
+                >
+                    Our Reputation
+                </motion.h1>
             </div>
             <div className='flex flex-wrap justify-around items-center gap-4 container pb-20'>
-                {reputations.map(({ icon, description, title }) => (
-                    <ReputationCard
-                        key={title}
-                        icon={icon}
-                        title={title}
-                        description={description}
-                    />
+                {reputations.map(({ icon, description, title }, index) => (
+                    <motion.div
+                        key={index}
+                        variants={animation}
+                        initial='initial'
+                        whileInView='animate'
+                        viewport={{ once: true }}
+                        transition={{
+                            type: 'keyframes',
+                            duration: parseFloat(`${index / 7 + 0.5}`),
+                        }}
+                    >
+                        <ReputationCard icon={icon} title={title} description={description} />
+                    </motion.div>
                 ))}
             </div>
         </div>
